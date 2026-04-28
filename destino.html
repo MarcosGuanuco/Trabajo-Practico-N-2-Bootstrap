@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/destino.css">
+</head>
+<body>
+<!-- Inicio de Nav -->
+<header>
+  <!-- Cambiamos bg-primary por nuestra clase personalizada -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Turismo Jujuy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="destino.html">Destino</a></li>
+          <li class="nav-item"><a class="nav-link" href="agencia.html">Agencias</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Información</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+              <li><a class="dropdown-item" href="#">Membresias</a></li> <!-- Consigna punto 7 -->
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="precios.html">Precios</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        </ul>
+        <div class="d-flex align-items-center">
+            <button id="theme-toggle" class="btn btn-outline-light me-3">
+              <i class="bi bi-moon-stars"></i>
+            </button>
+           <form class="d-flex" role="search">
+             <input class="form-control me-2" type="search" placeholder="Buscar">
+             <button class="btn btn-success" type="submit">Buscar</button>
+           </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- Final del Nav -->
+
+
+<!-- Inicio del contenido -->
+<main class="container py-5">
+    <h2 class="text-center mb-5">Explora Jujuy por Categoría</h2>
+    <!-- Botones de Filtro -->
+    <div class="d-flex justify-content-center flex-wrap gap-2 mb-5" id="botones-filtro">
+        <button class="btn btn-outline-primary active" data-categoria="todos">Todos</button>
+        <button class="btn btn-outline-primary" data-categoria="naturaleza">Naturaleza</button>
+        <button class="btn btn-outline-primary" data-categoria="playa">Sol y Playa</button>
+        <button class="btn btn-outline-primary" data-categoria="cultura">Cultura</button>
+        <button class="btn btn-outline-primary" data-categoria="gastronomia">Gastronomía</button>
+    </div>
+    <!-- Grid de Destinos (Usamos Row de Bootstrap para que sea responsivo) -->
+    <div class="row g-4" id="galeria-destinos">
+        <!-- Destino 1 -->
+        <div class="col-12 col-sm-6 col-md-4 item-destino naturaleza">
+            <div class="card-destino shadow">
+                <img src="img/naturalesa.jpg" class="img-fluid" alt="Montaña">
+                <div class="overlay">
+                    <h3>Lorem ipsum dolor sit</h3>
+                    <span>Ver más</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 item-destino cultura">
+            <div class="card-destino shadow">
+                <img src="img/cultura.jpg" class="img-fluid" alt="Cultura">
+                <div class="overlay">
+                    <h3>Lorem ipsum</h3>
+                    <span>Ver más</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 item-destino playa">
+            <div class="card-destino shadow">
+                <img src="img/playa.jpg" class="img-fluid" alt="playa">
+                <div class="overlay">
+                    <h3>Lorem ipsum dolor</h3>
+                    <span>Ver más</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 item-destino gastronomia">
+            <div class="card-destino shadow">
+                <img src="img/gastronomia.jpg" class="img-fluid" alt="gastronomia">
+                <div class="overlay">
+                    <h3>Lorem Harum.</h3>
+                    <span>Ver más</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 item-destino gastronomia">
+            <div class="card-destino shadow">
+                <img src="img/gastronomia(1).jpg" class="img-fluid" alt="gastronomia">
+                <div class="overlay">
+                    <h3>Lorem Harum.</h3>
+                    <span>Ver más</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 item-destino playa">
+            <div class="card-destino shadow">
+                <img src="img/playa(1).jpg" class="img-fluid" alt="playa">
+                <div class="overlay">
+                    <h3>Lorem ipsum dolor</h3>
+                    <span>Ver más</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 item-destino cultura">
+            <div class="card-destino shadow">
+                <img src="img/cultura(1).jpg" class="img-fluid" alt="Cultura">
+                <div class="overlay">
+                    <h3>Lorem ipsum</h3>
+                    <span>Ver más</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 item-destino naturaleza">
+            <div class="card-destino shadow">
+                <img src="img/naturalesa(1).jpg" class="img-fluid" alt="Montaña">
+                <div class="overlay">
+                    <h3>Lorem ipsum dolor sit</h3>
+                    <span>Ver más</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 item-destino gastronomia">
+            <div class="card-destino shadow">
+                <img src="img/gastronomia(2).jpg" class="img-fluid" alt="gastronomia">
+                <div class="overlay">
+                    <h3>Lorem Harum.</h3>
+                    <span>Ver más</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 item-destino cultura">
+            <div class="card-destino shadow">
+                <img src="img/cultura(2).jpg" class="img-fluid" alt="Cultura">
+                <div class="overlay">
+                    <h3>Lorem ipsum</h3>
+                    <span>Ver más</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 item-destino naturaleza">
+            <div class="card-destino shadow">
+                <img src="img/naturalesa(2).jpg" class="img-fluid" alt="Montaña">
+                <div class="overlay">
+                    <h3>Lorem ipsum dolor sit</h3>
+                    <span>Ver más</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 item-destino playa">
+            <div class="card-destino shadow">
+                <img src="img/playa(2).jpg" class="img-fluid" alt="playa">
+                <div class="overlay">
+                    <h3>Lorem ipsum dolor</h3>
+                    <span>Ver más</span>
+                </div>
+            </div>
+        </div>
+        <!-- Agrega más aquí con sus respectivas clases (naturaleza, cultura, etc.) -->
+    </div>
+</main>
+<section class="container py-5">
+    <h3 class="text-center mb-4">Tarifas y Temporadas</h3>
+    <!-- Este div es el que cumple con 'table-responsive' -->
+    <div class="table-responsive shadow-sm rounded">
+        <table class="table table-hover table-striped align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>Destino</th>
+                    <th>Temporada Alta</th>
+                    <th>Temporada Baja</th>
+                    <th>Incluye Guía</th>
+                    <th>Disponibilidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Purmamarca</strong></td>
+                    <td>$45.000</td>
+                    <td>$30.000</td>
+                    <td><i class="bi bi-check-circle-fill text-success"></i></td>
+                    <td><span class="badge bg-success">Alta</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Salinas Grandes</strong></td>
+                    <td>$55.000</td>
+                    <td>$40.000</td>
+                    <td><i class="bi bi-check-circle-fill text-success"></i></td>
+                    <td><span class="badge bg-warning text-dark">Media</span></td>
+                </tr>
+                <tr>
+                    <td><strong>Cataratas del Iguazú</strong></td>
+                    <td>$80.000</td>
+                    <td>$65.000</td>
+                    <td><i class="bi bi-x-circle-fill text-danger"></i></td>
+                    <td><span class="badge bg-success">Alta</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<!-- Final del contenido -->
+
+<!-- Inicio del Footer -->
+<footer class="footer-custom py-5 mt-5">
+  <div class="container">
+    <div class="row">
+      <!-- Formulario simple -->
+      <div class="col-md-4">
+        <h5>Suscríbete</h5>
+        <form class="input-group mb-3">
+        <input type="email" class="form-control" placeholder="tu@email.com">
+        <button type="submit" class="btn btn-primary">
+        <i class="bi bi-send-fill"></i>
+        </button>
+        </form>
+      </div>
+      <!-- Redes Sociales -->
+      <div class="col-md-4 text-center">
+        <h5>Síguenos</h5>
+        <div class="d-flex justify-content-center gap-3 fs-3">
+          <!-- Usamos clases de Bootstrap Icons -->
+          <a href="#" class="text-primary"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-danger"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-info"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="text-success"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+      <!-- Mapa (Placeholder) -->
+      <div class="col-md-4">
+        <h5>Ubicación</h5>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://google.com..." allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Final del Footer -->
+<script src="jquery-3.7.1.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

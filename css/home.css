@@ -1,0 +1,175 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -1;
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-content {
+    z-index: 10;
+    padding: 0 20px;
+}
+.hero-content .btn {
+    margin-top: 25px;
+}
+.custom-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.custom-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2) !important;
+}
+.img-hover {
+    transition: transform 0.5s ease;
+    height: 200px;
+    object-fit: cover;
+}
+.custom-card:hover .img-hover {
+    transform: scale(1.1);
+}
+body.dark-mode .card {
+    background-color: #1c2541;
+    border: 1px solid #3a506b;
+    color: #e0e1dd;
+}
+body.dark-mode .card h3, 
+body.dark-mode .card p,
+body.dark-mode .stat-box p {
+    color: #e0e1dd !important;
+}
+body.dark-mode .stat-box {
+    background-color: #1c2541;
+    color: white;
+}
+body.dark-mode .test-card {
+    background-color: #1c2541;
+    color: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+body.dark-mode h2 {
+    color: var(--text-color);
+}
+#contador-viajeros {
+    color: #00b4d8;
+    text-shadow: 0 0 10px rgba(0, 180, 216, 0.3);
+}
+.testimonios-css {
+    margin-top: 10px;
+    position: relative;
+    height: 280px;
+    width: 100%;
+}
+.testimonios-css input[type="radio"] {
+    display: none;
+}
+.cards-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.test-card {
+    position: absolute;
+    width: 100%;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: all 0.5s ease;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.8) translateY(50px);
+}
+#t1:checked ~ .cards-container #card1,
+#t2:checked ~ .cards-container #card2,
+#t3:checked ~ .cards-container #card3,
+#t4:checked ~ .cards-container #card4 {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1) translateY(0);
+    z-index: 10;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.dots label {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+#t1:checked ~ .dots label[for="t1"],
+#t2:checked ~ .dots label[for="t2"],
+#t3:checked ~ .dots label[for="t3"],
+#t4:checked ~ .dots label[for="t4"] {
+    background: var(--nav-bg);
+    width: 30px;
+    border-radius: 10px;
+}
+.seccion-trayectoria-testimonios {
+    background-color: var(--bg-color) !important; 
+    padding: 10px 0;
+    transition: background 0.3s ease;
+}
+body:not(.dark-mode) .test-card {
+    background-color: white;
+    color: #333;
+}
+body:not(.dark-mode) .dots label {
+    background-color: #ccc;
+}
+body.dark-mode .seccion-trayectoria-testimonios h2 {
+    color: white !important;
+}
+body.dark-mode .stat-box p {
+    color: #e0e1dd !important;
+}
+body.dark-mode .test-card p, 
+body.dark-mode .test-card h4 {
+    color: white !important;
+}
+.dots label {
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+body.dark-mode #t1:checked ~ .dots label[for="t1"],
+body.dark-mode #t2:checked ~ .dots label[for="t2"],
+body.dark-mode #t3:checked ~ .dots label[for="t3"],
+body.dark-mode #t4:checked ~ .dots label[for="t4"] {
+    background-color: #00b4d8;
+    border-color: #00b4d8;
+    width: 30px;
+}

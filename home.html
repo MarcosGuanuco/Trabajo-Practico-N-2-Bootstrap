@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+<!-- Inicio de Nav -->
+<header>
+  <!-- Cambiamos bg-primary por nuestra clase personalizada -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Turismo Jujuy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="destino.html">Destino</a></li>
+          <li class="nav-item"><a class="nav-link" href="agencia.html">Agencias</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Información</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+              <li><a class="dropdown-item" href="#">Membresias</a></li> <!-- Consigna punto 7 -->
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="precios.html">Precios</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        </ul>
+        <div class="d-flex align-items-center">
+            <button id="theme-toggle" class="btn btn-outline-light me-3">
+              <i class="bi bi-moon-stars"></i>
+            </button>
+           <form class="d-flex" role="search">
+             <input class="form-control me-2" type="search" placeholder="Buscar">
+             <button class="btn btn-success" type="submit">Buscar</button>
+           </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- Final del Nav -->
+
+<!-- Inicio del Contenido -->
+<section class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="video/Vídeo promocional Azul Oscuro Producciones para agencias de viaje.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay">
+        <div class="hero-content">
+            <!-- Texto que animaremos con jQuery -->
+            <h1 class="text-anim display-2 fw-bold" style="display:none;">Explora el Horizonte</h1>
+            <p class="text-slide opacity-0">Diseñamos aventuras a tu medida en los destinos más exóticos.</p>
+            <a href="destino.html" class="btn btn-primary btn-lg">Empezar Aventura</a>
+        </div>
+    </div>
+</section>
+<section class="container my-5">
+    <h2 class="text-center mb-5">Destinos Destacados</h2>
+    <div class="row g-4 justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="card h-100 shadow-sm custom-card">
+                <figure class="m-0 overflow-hidden">
+                    <img src="img/images (7).jpg" class="card-img-top img-hover" alt="Destino">
+                </figure>
+                <div class="card-body contenido text-center">
+                    <h3>Lorem Impus</h3>
+                    <p>Lorem ipsum, dolor sit amet.</p>
+                    <a href="destino.html" class="btn btn-outline-primary">Leer Más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="card h-100 shadow-sm custom-card">
+                <figure class="m-0 overflow-hidden">
+                    <img src="img/images (7).jpg" class="card-img-top img-hover" alt="Destino">
+                </figure>
+                <div class="card-body contenido text-center">
+                    <h3>Lorem Impus</h3>
+                    <p>Lorem ipsum, dolor sit amet.</p>
+                    <a href="destino.html" class="btn btn-outline-primary">Leer Más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="card h-100 shadow-sm custom-card">
+                <figure class="m-0 overflow-hidden">
+                    <img src="img/images (7).jpg" class="card-img-top img-hover" alt="Destino">
+                </figure>
+                <div class="card-body contenido text-center">
+                    <h3>Lorem Impus</h3>
+                    <p>Lorem ipsum, dolor sit amet.</p>
+                    <a href="destino.html" class="btn btn-outline-primary">Leer Más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="card h-100 shadow-sm custom-card">
+                <figure class="m-0 overflow-hidden">
+                    <img src="img/images (7).jpg" class="card-img-top img-hover" alt="Destino">
+                </figure>
+                <div class="card-body contenido text-center">
+                    <h3>Lorem Impus</h3>
+                    <p>Lorem ipsum, dolor sit amet.</p>
+                    <a href="destino.html" class="btn btn-outline-primary">Leer Más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="card h-100 shadow-sm custom-card">
+                <figure class="m-0 overflow-hidden">
+                    <img src="img/images (7).jpg" class="card-img-top img-hover" alt="Destino">
+                </figure>
+                <div class="card-body contenido text-center">
+                    <h3>Lorem Impus</h3>
+                    <p>Lorem ipsum, dolor sit amet.</p>
+                    <a href="destino.html" class="btn btn-outline-primary">Leer Más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="card h-100 shadow-sm custom-card">
+                <figure class="m-0 overflow-hidden">
+                    <img src="img/images (7).jpg" class="card-img-top img-hover" alt="Destino">
+                </figure>
+                <div class="card-body contenido text-center">
+                    <h3>Lorem Impus</h3>
+                    <p>Lorem ipsum, dolor sit amet.</p>
+                    <a href="destino.html" class="btn btn-outline-primary">Leer Más</a>
+                </div>
+            </div>
+        </div>
+      <!-- Repite el bloque <div class="col-12 col-md-4"> para las demás tarjetas -->
+    </div>
+</section>
+<!-- Sección de Estadísticas (Nueva) -->
+<section class="seccion-trayectoria-testimonios py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">  
+            <!-- LADO IZQUIERDO: Contadores -->
+            <div class="contador col-lg-4 text-center text-lg-start mb-5 mb-lg-0">
+                <h2 class="mb-4">Nuestra Trayectoria</h2>
+                <div class="stat-box mb-4">
+                    <h3 class="display-4 fw-bold text-primary" id="contador-viajeros" data-target="1500">0</h3>
+                    <p class="lead">Viajeros Satisfechos</p>
+                </div>
+            </div>
+            <!-- LADO DERECHO: Tu Carrusel CSS -->
+            <div class="carrusel col-lg-8">
+                <section class="testimonios-css">
+                    <h2 class="text-center mb-4 d-lg-none">Testimonios</h2>
+                    
+                    <input type="radio" name="slider" id="t1" checked>
+                    <input type="radio" name="slider" id="t2">
+                    <input type="radio" name="slider" id="t3">
+                    <input type="radio" name="slider" id="t4">
+
+                    <div class="cards-container">
+                        <label for="t1" class="test-card" id="card1">
+                            <p>"¡Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nostrum placeat at minus fugit eligendi praesentium eos sequi q."</p>
+                            <h4>- Lorem Impus</h4>
+                        </label>
+                        <label for="t2" class="test-card" id="card2">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nobis aut quod cum pariatur quaerat commodi dolorem voluptatum aperiam quae nulla hic, sunt, quisquam laudantium, illo illum ipsa magni aliquam!."</p>
+                            <h4>- Lorem Impus</h4>
+                        </label>
+                        <label for="t3" class="test-card" id="card3">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident saepe magnam omnis error sint officiis in reiciendis veniam nesciunt nam iste esse itaque illo quidem sapiente, nulla earum voluptas hic."</p>
+                            <h4>- Lorem Impus</h4>
+                        </label>
+                        <label for="t4" class="test-card" id="card4">
+                            <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum mollitia aliquam qui tempore quae aliquid nam fugiat est perspiciatis. Sint, rem cum. Ab, consequatur quia distinctio beatae ratione consectetur. Quo."</p>
+                            <h4>- Lorem Impus</h4>
+                        </label>
+                    </div>
+
+                    <div class="dots">
+                        <label for="t1"></label>
+                        <label for="t2"></label>
+                        <label for="t3"></label>
+                        <label for="t4"></label>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Final del Contenido -->
+
+<!-- Inicio del Footer -->
+<footer class="footer-custom py-5 mt-5">
+  <div class="container">
+    <div class="row">
+      <!-- Formulario simple -->
+      <div class="col-md-4">
+        <h5>Suscríbete</h5>
+        <form class="input-group mb-3">
+        <input type="email" class="form-control" placeholder="tu@email.com">
+        <button type="submit" class="btn btn-primary">
+        <i class="bi bi-send-fill"></i>
+        </button>
+        </form>
+      </div>
+      <!-- Redes Sociales -->
+      <div class="col-md-4 text-center">
+        <h5>Síguenos</h5>
+        <div class="d-flex justify-content-center gap-3 fs-3">
+          <!-- Usamos clases de Bootstrap Icons -->
+          <a href="#" class="text-primary"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-danger"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-info"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="text-success"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+      <!-- Mapa (Placeholder) -->
+      <div class="col-md-4">
+        <h5>Ubicación</h5>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://google.com..." allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Final del Footer -->
+<script src="jquery-3.7.1.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

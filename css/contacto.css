@@ -1,0 +1,9 @@
+[data-bs-theme="dark"] .form-control {
+    background-color: #2b3035;
+    color: #fff;
+    border-color: #495057;
+}
+[data-bs-theme="dark"] .form-control:focus {
+    background-color: #343a40;
+    color: #fff;
+}
